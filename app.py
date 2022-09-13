@@ -16,7 +16,7 @@ def calculate():
         # 76860791838
         identifikator = oib
         url = f'https://sudreg-api.pravosudje.hr/javni/subjekt_detalji?tipIdentifikatora=oib&identifikator={identifikator}&expand_relations=True'
-        newheaders = {"Accept": "application/json", 'Ocp-Apim-Subscription-Key': '67748797ee8c4ad2ba050a079e0b39f5'}
+        newheaders = {"Accept": "application/json", 'Ocp-Apim-Subscription-Key': '{key}'}
 
         response = requests.get(url,
                                 data={"tipIdentifikatora": 'oib', "identifikator": identifikator,
